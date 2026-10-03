@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/> 
+<title>MODERN HOME</title>
+<link rel="stylesheet" href="Project.css">
+
+</head>
+<body>
+
+<img class="logo" src="logo.jpeg" width="50" height="50">
+<h2>MODERN HOME</h2>
+
+       <nav>
+	   <center>
+	   <a onclick="showpage('home')"><b>Home</b></a>
+	   <a onclick="showpage('about')"><b>About</b></a>
+	   <a onclick="showpage('signUplogIn')"><b>SignUpLogIn</b></a>
+	   <a onclick="showpage('shop')"><b>shop</b></a>
+	   <a onclick="showpage('cart')"><b>Cart</b></a>
+	   <a onclick="showpage('contact')"><b>Contact Us</b></a>
+	   </center>
+	   </nav>
+	   
+	   
+	   
+<p id="welcomeUser"></p>
+		
+<!--Homepage-->
+
+
+<div class="ts">
+<button onclick="likeWebsite()" id="likeBtn">Like Website</button>
+<p id="likeCount">Likes: 0</p>
+</div>
+    <section id="home" class="page active">
+	
+<div class="eish">
+<center>
+<h1>WELCOME TO MODERN HOME</h1>
+<img src="troy.JPEG">
+<img src="Tumelo.jpeg" width="400" height="520">
+
+
+<div class="demonstrate">
+<p id="demo">Check out how we do it with our best furnitures that we can provide to your homes, if you trust our store to provide your home with some of the best furniture with the best low prices.
+We were voted to be the best furniture stores in January 2026,
+and we still want to be number one trusted furniture and appliances store in the country even around the world.
+You can just do us a favor by watching the video below</p><br>
+<video width="400" height="400" controls>
+<source src="Gontse.mp4" type="video/mp4">
+</video>
+
+<div class="okay">
+<img src="Mazwi.png" width="400" height="500">
+<p id="hero">Make your home stylish with furniture that is designed with great quality and love</p>
+</div>
+<div class="kamo">
+<img src="rose.png" height="500" width="50">
+<img src="paballo.jpg" height="600" width="800"><br><br>
+</div>
+
+
+<button onclick="validateSignup()">SignUp</button>
+
+
+<div class="tumelo">
+<p id="steve">check out how good our furniture looks and some of the best quality, <br>
+by tapping on the link below</p>
+<a href="https://vt.tiktok.com/ZSuKnydcx/">
+check out our best furniture</a>
+</div>
+</section>
+
+
+<!--About page-->
+
+
+
+    <section id="about" class="page">
+	
+	
+	                
+	
+	     
+<center>		 <h2><u>
+		  FURNITURE AND ELECTRICAL APPLIANCES</u></h2>
+		  
+		  <div class="container">
+		  <img src="about page.JPG">
+		  <p>
+		  <ol id="yeah">
+		  <li>Modern Home is an online store that focuses on providing high-quality furniture and household appliances designed for modern homes.</li><br>
+		  <li>The company offers a variety of products for different parts of the house, including living room furniture, bedroom furniture, and useful kitchen or household appliances.</li><br>
+		  <li>Their aim is to help customers create homes that are comfortable, stylish,and practical for everyday living.</li><br>
+ <li>The business believes that every home should be a place where people can relax, feel happy, and enjoy spending time.</li> <br>
+ <li>Because of this, they focus on offering products that are reliable, affordable, and designed to improve the comfort and convenience of daily life.</li><br>
+ <li>Modern Home also makes shopping simple and accessible through their online store.</li><br>
+ <li> Customers can easily browse through different products, compare options, and choose items that best suit their needs without leaving their homes.</li> <br>
+ <li>Overall, the company is committed to delivering good service, quality products, and a smooth shopping experience while helping people create homes they truly enjoy living in.</li><br>
+ </ol>
+
+ </p>
+   
+  <center>
+  <h2 id="sammy"><u>OUR VISION</u></h2>
+  <p id="att">To create homes where people can relax, feel happy and enjoy living everyday</p>
+ <img src="890.png">
+
+  
+  
+     <center><h2 id="sammy"><u>OUR MISSION</u></h2>
+	 <p id="att">To provide high quality, reliable, affordable and stylish products while delivering good service and a smooth online shopping experience</p></center>
+	 </div>
+	 </section>
+	 
+	                                      
+										  
+										  <!--signUplogIn-->
+	<section id="signUplogIn" class="page">
+	<div class="SignUp">
+	<h3><u><strong>Sign Up</strong></u></h3>
+	<label for="name">Enter your name:</label><br>
+	<input type="text" id="name" placeholder="Enter your name"><br>
+	<label for="surname">Enter yourSurname:</label><br>
+	<input type="text" id="surname" placeholder="Enter your Surname"><br>
+	<label for="id_no">Enter Your ID number:</label><br>
+	<input type="text" id="id_no" placeholder="Your ID number"><br>
+	<label for="date" name="dob">Date of birth:</label><br>
+	<input type="date" name="date of birth"><br>
+	<label for="email">Enter your email:</label><br>
+	<input type="email" id="email" placeholder="Enter your email"><br>
+	<label for="cellphone">Enter your Contact No</label><br>
+	<input type="text" id="number" placeholder="Enter your contact Number"><br>
+	<label for="password">Create your password:</label><br>
+	<input type="password" id="password" placeholder="Enter your password"><br>
+	
+	
+	
+	<!--gender-->
+	  <input type="radio" name="gender" value="male">MALE:<br>
+	  <input type="radio" name="gender" value="female">FEMALE:<br>
+	  
+	 <label for="delivery">Physical Address</label><br>
+	 <textarea id="address" cols="30" rows="5" placeholder="Enter your Address"></textarea><br>
+	 <button onclick="signup()">Sign UP</button><br>
+	 <p id="acc">Already have account?</p>
+	 <button onclick="showpage('login')">LogIn here</button>
+	 </div>
+	 </section>
+	 
+	 <!--login page-->
+	     <section id="login" class="page">
+		 <div class="login">
+		 <h3>login</h3>
+		 <label for="loginEmail">Enter Your Email/Number:</label><br>
+		 <input type="email" id="loginEmail" placeholder="Enter Your Email"><br>
+		 <label for="loginPassword">Enter Your Password:</label><br>
+		 <input type="password" id="loginPassword" placeholder="Enter your password"><br><br>
+		 <button onclick="login()">LogIn</button><br>
+		 
+		 
+		
+		 
+		 </div>
+		 
+		</section>
+		 
+		 <!--Shop-->
+		 
+		 <section id="shop" class="page">
+		 <!--searchBar/input-->
+	    <input type="text" id="searchInput" placeholder="Search Furniture..." onkeyup="searchProducts()"><br>
+		
+		
+		 <h2><u>FURNITURE AND ELECTRICAL APPLIANCES SHOP</u></h2><br>
+		 <div class="products">
+		 <div class="card">
+		 <img src="2.jpg">
+		 <h4>Steam and Spray Iron</h4>
+		 <p>R349,99</p>
+		 <button onclick="addCart('Steam and Spray Iron',349.99)">Add to Cart</button>
+		 </div>
+		 <div class="card">
+		 <img src="1.jpg">
+		 <h4>Gas Oven Stove</h4>
+		 <p>R14000,87</p>
+		 <button onclick="addCart('Gas Oven Stove',14000.87)">Add to Cart</button>
+		 </div>
+		 <div class="card">
+		 <img src="3.jpg">
+		 <h4>Stand Mixer</h4>
+		 <p>R1799,99(10%off)</p>
+		 <button onclick="addCart('Stand Mixer',1799.99)">Add to Cart</button>
+		 </div>
+		 <div class="card">
+		 <img src="4.jpg">
+		 <h4>Microwave</h4>
+		 <p>R2799,99(15%off)</p>
+		 <button onclick="addCart('Microwave',2799.99)">Add to Cart</button>
+		 </div>
+		 		 <div class="card">
+		 <img src="5.jpg">
+		 <h4>Fan</h4>
+		 <p>R1329,99</p>
+		 <button onclick="addCart('Fan',1329.99)">Add to Cart</button>
+		 </div>
+		 		 <div class="card">
+		 <img src="6.jpg">
+		 <h4>Electrical kettle</h4>
+		 <p>R899,99</p>
+		 <button onclick="addCart('Electrical kettle',899.99)">Add to Cart</button>
+		 </div>
+		 		 <div class="card">
+		 <img src="7.jpg">
+		 <h4>Washing Machine</h4>
+		 <p>R9999,99</p>
+		 <button onclick="addCart('Washing Machine',9999.99)">Add to Cart</button>
+		 </div>
+		       <div class="card">
+			   <img src="i1.png">
+			   <h4>Cloud Shaped Chair</h4>
+			   <p>R2499,99</p>
+			  <button onclick="addCart('Cloud Shaped Chair',2499.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i2.png">
+			   <h4>Mirror</h4>
+			   <p>R800</p>
+			  <button onclick="addCart('Mirror',800)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i3.png">
+			   <h4>Dining Table</h4>
+			   <p>R4499,99</p>
+			  <button onclick="addCart('Dining Table',4499.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i4.png">
+			   <h4>Drawer</h4>
+			   <p>R999,99</p>
+			  <button onclick="addCart('Drawer',999.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i5.png">
+			   <h4>Queen Size Bed</h4>
+			   <p>R14999,99</p>
+			  <button onclick="addCart('Queen Size Bed',14999.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i6.png">
+			   <h4>Study Desk</h4>
+			   <p>R1999,99</p>
+			  <button onclick="addCart('Study Desk',1999.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i7.png">
+			   <h4>Couch</h4>
+			   <p>R19999,99</p>
+			  <button onclick="addCart('Couch',19999.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i8.png">
+			   <h4>Comfortable Chair</h4>
+			   <p>R1749,99</p>
+			  <button onclick="addCart('Comfortable Chair',1749.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i9.png">
+			   <h4>Italian Wardrobe</h4>
+			   <p>R7999,99</p>
+			  <button onclick="addCart('Italian Wardrobe',7999.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i10.png">
+			   <h4>Modern Wardrobe</h4>
+			   <p>R5999,99</p>
+			  <button onclick="addCart('Modern Wardrobe',5999.99)">Add to Cart</button>
+			  </div>
+			  
+			  		       <div class="card">
+			   <img src="i11.png">
+			   <h4>Office Desk</h4>
+			   <p>R1999,99</p>
+			  <button onclick="addCart('Office Desk',1999.99)">Add to Cart</button>
+			  </div>
+			  </div>
+			  </section>
+
+
+
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 <!--contact us-->
+		 <section id="contact" class="page">
+		 <div class="Tough">
+		 
+		  <div class="Contacts">
+		  <center>
+		  <h3 class="tt"><u>Call us on</u></h3>
+		  +27 12 875 6994<br>
+		  <h3><u>WhatsApp us on</u></h3><br>
+		  +27781478827
+		  <h3><u>Email</u></h3><br>
+		  <a href="modernhomefe@gmai.com">Email us</a><br>
+		  <h3><u>Follow Us on Insagram</u></h3><br>
+		  <a href="https://www.instagram.com/masiza.avuzwa?igsh=ZmgyMXBlN2t2ajJn&utm_source=qr">Follow on Instagram</a><br>
+		  <h3><u>Our Address<br>
+		  <p id="add">Private Bag X500 <br>
+		 23_Msholozi Street<br>
+		 Dunnotar<br>
+		 Nigel<br>
+		 1496<br>
+		 </div>
+		 </center>
+		 </div>
+		 </section>
+		 
+		        
+				 
+				  
+				  <!--Cart-->
+				  <section id="cart" class="page">
+				  <h2>Your Cart</h2>
+				  <ul id="cartItems"></ul>
+				  
+				  <!--payfast and sandbox API-->
+				  
+				  <form id="payfastForm" action="https://sandbox.payfast.co.za/eng/process" method="post">
+
+                  <input type="hidden" name="merchant_id" value="10047473">
+                 <input type="hidden" name="merchant_key" value="mxf4cfv6ryvwc">
+
+                 <input type="hidden" name="amount" id="amount">
+                  <input type="hidden" name="item_name" value="Modern Home Purchase">
+
+                 <button type="submit">Pay Now</button><br><br>
+
+                 </form>
+				  </section>
+				  
+<!--footer-->
+<footer>
+<p id="footer">©2026 Modern Home| All rights reserved</P>
+</footer>
+ 
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>		 
+</body>
+<script src="Group JAVASCRIPT.js" defer></script>
+
+
+</html>
